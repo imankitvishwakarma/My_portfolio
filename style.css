@@ -2,6 +2,7 @@
 
 
 body{
+    
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
@@ -10,6 +11,14 @@ body{
 }
 html{
     scroll-behavior: smooth;
+}
+
+html.body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
 }
 
 :root{
@@ -26,7 +35,7 @@ header{
        height: 800px;
        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%);
 }
-
+/* container */
 .container{
     max-width: 1152px;
     padding: 0 15px;
@@ -39,7 +48,7 @@ header{
     }
 }
 
-@media (min-width:760){
+@media (min-width:768){
     .container{
         max-width: 720px;
     }
@@ -56,7 +65,7 @@ header{
         max-width: 1152px;
     }
 }
-
+/* nav bar */
 header nav .left a{
     color: var(--pure);
     text-decoration: none;
@@ -86,6 +95,8 @@ nav img{
 nav img:hover{
     transform: rotate(3600deg);
 }
+
+/* I'm a web developer */
 
 .hero{
     padding: 3rem 0;
@@ -133,7 +144,7 @@ nav img:hover{
 .justify-center{
     justify-content: center;
 }
-
+/* about me */
 section .container{
     padding: 6rem 0;
 }
@@ -193,6 +204,7 @@ section.about .social a img{
     height: 100%;
     padding: 0.5rem;
 }
+/* my skills  */
 
 .section-heading{
     color: var(--secondary);
@@ -300,11 +312,9 @@ section.services .card-wrapper .card:hover h2{
 .card .percentage p span{
     color: white;
 }
-
-section.reviews .slider .slide img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+/* My projects */
+section.reviews .slider .slide img{ 
+    height: 100px; 
     object-fit: cover;
     margin-bottom: 2rem;
 }
@@ -354,6 +364,16 @@ section.reviews .dots li.slick-active button{
     width: 20px;
 }
 
+.btn a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.btn a:hover{
+    color: var(--primary);
+}
+
+/*  I am Available for freelancer */
 section.freelancer {
     text-align: center;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./image/camera.png);
@@ -446,7 +466,7 @@ section.contact .btn-wrapper{
     text-align: center;
     margin-top: 2rem;
 }
-
+/* footer */
 footer{
     background: var(--dark);
     text-align: center;
@@ -455,12 +475,18 @@ footer{
 }
 
 footer .footer-logo{
+
     margin-bottom: 3rem;
     width: 75px;
     border-radius: 50%;
 }
 
+footer .footer-socials{
+    margin-left: 1.5rem;
+}
+
 footer .footer-socials a{
+    color: var(--pure);
      margin-right: 1rem;
 }
 
@@ -472,6 +498,8 @@ footer .footer-socials{
 footer .copyright{
     color: var(--ternary);
 }
+
+/* background hamber buttuon */
 
 @media (max-width:1024px){
     header #main-nav{
@@ -492,6 +520,8 @@ footer .copyright{
     border: none;
     outline: none;
     cursor: pointer;
+    display: none;
+    
 }
 
 .hamberger img{
@@ -502,7 +532,7 @@ footer .copyright{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1001;
+    z-index: 1;
     background: var(--light);
     width: 100%;
     height: 100%;
@@ -538,3 +568,133 @@ footer .copyright{
     text-decoration: none;
     font-size: 2rem;
 }
+
+/* tab responsive */
+@media (max-width: 1024px){
+    .hamberger{
+        display: block;
+    }
+    header #main-nav{
+        display: none;
+    }
+    .hero .left img {
+        margin-left: 100px;
+        padding-top: 150px;
+    }
+    .hero .right {
+        margin-left: -5rem;
+        margin-top: 5rem;
+    }
+    section.about .about-me-img {
+        margin-left: 100px;
+        height: 350px;   
+    }
+    section.about {
+        margin-right: 95px;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex-1 {
+        
+        margin-left: -95px;
+    }
+
+}
+/* mobile responsive */
+@media (max-width:576px){
+    html,body{
+        width: 100%;
+        height: 100%; 
+        padding: 0px;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+    .hamberger img{
+        width: 30px;
+    }
+    
+    header #main-nav{
+        display: none;
+    }
+    .container{
+        max-width:100%;
+        
+    }
+    .hamberger{
+        display: inline-block;
+    }
+    .hero .left img {
+        padding-top: 52px;
+    }
+    .mobile-nav{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+        height: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 95%, 0 100%);
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero .left img {
+        width: 100%;
+        height: 100%;
+        padding-left: 16px;
+    }
+
+    .hero .right {
+        margin-top: -2rem;
+        margin-right: -75px;
+    }
+
+.hero .right h1 {
+    font-size: 2rem;
+    
+}
+  .btn {
+    margin-bottom: 26px;
+    font-size: 1rem;
+ }
+    section.about .about-me-img {
+        width: 100%;
+        height: 100%; 
+           
+    }
+
+    .flex-1 {
+        text-align: center;
+    }
+    .im {
+        margin-bottom: 93px;
+        padding-left: 190px;
+        
+    }
+    section.about p {
+        line-height: 1rem;
+        margin-bottom: -2rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.freelancer {
+        height: 200px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 95%, 0 100%);
+      
+    }
+
+    section .container {
+        padding: 1px;
+    }
+
+    section.contact .card-wrapper {       
+        grid-template-columns: repeat(1, 1fr);      
+    }
+    section.contact .input-wrap {
+        grid-template-columns: repeat(1, 1fr);      
+    }
+} 
