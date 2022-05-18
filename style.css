@@ -686,13 +686,11 @@ footer .copyright{
         text-align: center;
     }
     .im {
-        margin-bottom: 30px;
-        padding-left: 190px;
-        
+        margin-right: -12rem;     
     }
     section.about p {
-        line-height: 1rem;
-        margin-bottom: -2rem;
+        line-height: 1.4rem;  
+        margin: 1.5rem 5rem;
     }
     .about-inner-wrap{
         flex-direction: column;
@@ -706,9 +704,7 @@ footer .copyright{
       
     }
     .section-heading + p {
-     
         margin-bottom: 4rem;
-       
     }
     
     section .container {
@@ -724,5 +720,4 @@ footer .copyright{
     section.freelancer h1 {
         font-size: 1.4rem;    
     }
-  
 } 
