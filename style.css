@@ -1,18 +1,14 @@
 @import 'utilites.css';
-
-
 body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     -webkit-font-smothing:antialiased;
     font-family: 'Poppins', sans-serif;
-    position: relative;
 }
 html{
     scroll-behavior: smooth;
 }
-
 html.body{
     width: 100%;
     height: 100%;
@@ -20,7 +16,6 @@ html.body{
     padding: 0%;
     overflow-x: hidden;
 }
-
 :root{
     --primary:#3DCFD3;
     --dark:#161616;
@@ -29,11 +24,14 @@ html.body{
     --light:#F2F2F2;
     --secondary:#070606;
 }
-
-header{
-       background-color: var(--dark);
+header{      
+       background-image: url(https://i.pinimg.com/originals/db/47/0a/db470a1fb336155a7a56bb3d75a90b2b.gif);
+       width: 100%;
        height: 650px;
        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%); 
+       background-attachment: fixed;
+       background-size: cover;
+       background-position: center;    
 }
 /* container */
 .container{
@@ -41,39 +39,32 @@ header{
     padding: 0 15px;
     margin: 0 auto;
 }
-
 @media (min-width:576){
     .container{
         max-width: 540px;
     }
 }
-
 @media (min-width:768){
     .container{
         max-width: 720px;
     }
 }
-
 @media (min-width:992){
     .container{
         max-width: 960px;
     }
 }
-
 @media (min-width:1200){
     .container{
         max-width: 1152px;
     }
 }
 /* nav bar */
-
-
 .left1 ul {
     display: flex;
     list-style: none;
     margin-left: -26rem;
 }
-
 .left1 ul li a{
     color: var(--pure);
     text-decoration: none;
@@ -81,75 +72,63 @@ header{
     text-transform: uppercase;
     transition: all .3s ease;
 }
-
 .left1 ul li a:hover{   
    color:var(--primary);
 }
-
 header {
     padding: 2rem 0;
 }
-
 header .branding{
     margin-right: 6rem;
 }
-
 .branding img{
     height: 63px;  
     width: 63px; 
     border-radius: 50%;
     transition: all 2s;
-    
 }
-
 .branding img:hover{
     transform: rotate(360deg);
 }
 /* I'm a web developer */
-
 .hero{
     padding: 3rem 0;
 }
-
 .hero .left{
     margin-right: 10rem;
     margin-top: -172px;
     padding-top: 30px;
     z-index: -1;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: sticky;
 }
-
 .hero .left img{
     width: 100%;
     height: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: sticky;      
 }
-
 .hero .right{
     color: var(--pure);
     margin-top: -30rem;
 }
-
-.hero .right h6{
-       font-size: 1.6rem;
-       color: var(--primary);
-       margin-bottom: 0.5rem;
-}
-
 .hero .right h1{
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 100;
-    line-height: 1;
+    line-height: 2;
     margin-bottom: 2rem;
 }
-
 .hero .right h1 span{
     color: var(--primary);
 }
-
 .hero .right p{
     line-height: 1.9;
     margin-bottom: 2rem;
 }
-
 .justify-center{
     justify-content: center;
 }
@@ -391,13 +370,13 @@ section.reviews .dots li.slick-active button{
 /*  I am Available for freelancer */
 section.freelancer {
     width: 100%;
-    height: 200px;
+    height: auto;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./image/camera.png);
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./image/camera.png)repeat fixed 100%;
     color: var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 85%, 0 100%);
-    padding-bottom: 10rem;
-    padding-top: 2rem ;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
 }
 
 section.freelancer h1{
@@ -407,19 +386,16 @@ section.freelancer h1{
 
 section.freelancer h1 span{
     color: var(--primary);
-}
-   
+}  
 section.freelancer h2 span{
     color: var(--primary);
      
 }
-
 section.freelancer p{
-    margin-bottom: 2rem;
     line-height: 1.5rem;
     font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    margin-top: 4rem;
+    font-size: 1.4rem;
+    margin: 2rem 0rem;
 }
 /* Contact Us */
 section.contact .card-wrapper{
@@ -429,54 +405,44 @@ section.contact .card-wrapper{
     margin-bottom: 2rem;
     margin-top: -2rem;
 }
-
 section.contact .card-wrapper .card{
     text-align: center;
 }
-
 section.contact .card-wrapper .card a{
    text-decoration: none;
 }
-
 section.contact .card-wrapper .card img{
     margin-bottom: 0rem;
     width: 40px;
 }
-
 section.contact .card-wrapper .card h1{
     font-weight: 400px;
     margin-bottom: 1rem;
 }
-
 section.contact .card-wrapper .card h6 a{
     font-size: 1rem;
     color: var(--ternary);
     font-weight: 400px;
     margin-bottom: 4rem;
 }
-
 section.contact .input-wrap{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     margin-bottom: 2rem;
 }
-
 section.contact .input-wrap-2{
     display: flex;
     flex-direction: column;
 }
-
 section.contact .input-wrap-2 input{
     margin-bottom: 0.5rem;
 }  
-
 section.contact input{
     padding: 0.5rem;
     border: 1px solid var(--light);
     font-size: 0.9rem;
 }
-
 section.contact .input-wrap-2 textarea{
     padding: 0.5rem;
     border: 1px solid var(--light);
@@ -485,12 +451,10 @@ section.contact .input-wrap-2 textarea{
 section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
     outline: none;
 }
-
 section.contact .btn-wrapper{
     text-align: center;
     margin-top: 2rem;
 }
-
 /* footer */
 footer{
     background: var(--dark);
@@ -499,7 +463,6 @@ footer{
     width: 100%;
     height: auto;
 }
-
 footer .footer-logo{
     margin-bottom: 1rem;
     width: 75px;
@@ -517,18 +480,13 @@ footer .footer-socials a{
     color: var(--pure);
      margin-right: 1rem;
 }
-
 footer .footer-socials{
     margin-bottom: 1rem;
-   
 }
-
 footer .copyright{
     color: var(--ternary);
 }
-
 /* background hamber buttuon */
-
 .site-main-wrapper{
     position: relative;
 }
@@ -579,7 +537,6 @@ footer .copyright{
 
 .times img{
     width: 30px;
-    
 }
 .mobile-nav ul{ 
     list-style: none;
@@ -617,11 +574,9 @@ footer .copyright{
     section.services .card-wrapper{
         grid-template-columns: repeat(2, 1fr);
     }
-    .flex-1 {
-        
+    .flex-1 { 
         margin-left: -95px;
     }
-
 }
 /* mobile responsive */
 @media (max-width:576px){
@@ -632,14 +587,17 @@ footer .copyright{
         margin: 0px;
         overflow-x: hidden;
     }
+    .hamberger {
+        display: inline-block;
+        z-index: 1;
+    }
     .hamberger img{
         width: 30px;
     }
-    header{
-            background-image: url(image/wallpaper-gif.gif);
-            width: 100%;
-            height: 100%;      
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%);     
+    header{ 
+        width: 100%;
+        height: 100%;      
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%);     
     }
     
     header .z{
@@ -660,27 +618,22 @@ footer .copyright{
         display: none;
     }
     .container{
-        max-width:100%;
-        
+        max-width:100%; 
     }
-    .hamberger{
-        display: inline-block;
-    }
-    
     .mobile-nav{
         width: 100%;
     }
-  
     .hero{
         flex-direction: column;
     }
     .hero .left {
-        margin-top: -112px;
-        
+        margin-top: -112px;    
     }
     .hero .right h1 {
-        font-size: 2rem;
-    
+        font-size: 2.2rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
     }
    .btn {
         margin-bottom: 26px;
@@ -688,16 +641,13 @@ footer .copyright{
     }
     section.about .about-me-img {
         width: 100%;
-        height: 100%; 
-           
+        height: 100%;      
     }
-
     .flex-1 {
         text-align: center;
     }
     .im {
-        margin-right: -12rem;
-        
+        margin-right: -12rem;  
     }
     section.about p {
         line-height: 1.4rem;    
@@ -709,25 +659,25 @@ footer .copyright{
     section.services .card-wrapper{
         grid-template-columns: repeat(1, 1fr);
     }
-    section.services .card-wrapper {
-      
+    section.services .card-wrapper {  
         padding: 0rem;
     }
     section.freelancer {
-        height: 90px;
+        height: 80px;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 95%, 0 100%);
-      
+    }
+    section.freelancer h1 {
+        font-size: 1.4rem;    
+        margin-bottom: -0.5rem;
     }
     section.freelancer p {
-    font-size: 1rem;
-    margin-top: 1rem;
+        font-size: 1rem;
+        margin-top: -0.5rem;
+        padding: 0.2rem;
     }
     .section-heading + p {
-     
-        margin-bottom: 4rem;
-       
+        margin-bottom: 4rem;  
     }
-    
     section .container {
         padding: 28px;
     }
@@ -738,8 +688,4 @@ footer .copyright{
     section.contact .input-wrap {
         grid-template-columns: repeat(1, 1fr);      
     }
-    section.freelancer h1 {
-        font-size: 1.4rem;    
-    }
-    
 } 
