@@ -260,10 +260,6 @@ section.services .card-wrapper .card p{
     line-height:1.6rem;
 }
 
-section.services .card-wrapper .card:hover{
-    background: var(--dark);
-}
-
 section.services .card-wrapper .card:hover h2{
     color: var(--pure);
 }
@@ -280,11 +276,11 @@ section.services .card-wrapper .card:hover h2{
 
 .card .html p{
     background: var(--primary);
-    width: 45%;
+    width: 70%;
 }
 .card .css p{
     background: var(--primary);
-    width: 65%;
+    width: 75%;
 }
 .card .bootstrap p{
     background: var(--primary);
@@ -292,7 +288,7 @@ section.services .card-wrapper .card:hover h2{
 }
 .card .javascript p{
     background: var(--primary);
-    width: 0%;
+    width: 35%;
 }
 .card .py p{
     background: var(--primary);
