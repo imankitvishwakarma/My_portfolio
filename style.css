@@ -260,10 +260,6 @@ section.services .card-wrapper .card p{
     line-height:1.6rem;
 }
 
-section.services .card-wrapper .card:hover h2{
-    color: var(--pure);
-}
-
 .card .percentage {
     background-color:var(--ternary) ;
     color: white;
