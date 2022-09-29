@@ -286,13 +286,13 @@ section.services .card-wrapper .card p{
     background: var(--primary);
     width: 35%;
 }
-.card .jquery p{
+.card .py p{
     background: var(--primary);
-    width: 5%;
+    width: 65%;
 }
-.card .angular p{
+.card .dj p{
     background: var(--primary);
-    width: 0%;
+    width: 70%;
 }
 
 .card .percentage p span{
