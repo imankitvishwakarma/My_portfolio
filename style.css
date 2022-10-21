@@ -33,10 +33,23 @@ header{
        background-size: cover;
        background-position: center;    
 }
- <!-- scroll button -->
-            <div class="topbtn">
-                <a class="" href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
-              </div>
+/* scroll button */
+.topbtn{
+    right: 0;
+    right: 10px;
+    position: fixed;
+    bottom: 20px;
+    z-index: 1;
+}
+.topbtn a{
+    text-decoration: none;
+}
+
+.topbtn a i{
+    text-decoration: none;
+    color: #3DCFD3;
+    font-size: 25px;
+}
 /* container */
 .container{
     max-width: 1152px;
