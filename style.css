@@ -5,6 +5,7 @@ body{
     box-sizing: border-box;
     -webkit-font-smothing:antialiased;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 html{
     scroll-behavior: smooth;
@@ -49,6 +50,10 @@ header{
     text-decoration: none;
     color: #3DCFD3;
     font-size: 25px;
+    transition: all 3s;
+}
+.topbtn a i:hover{
+    transform: rotate(360deg);
 }
 /* container */
 .container{
