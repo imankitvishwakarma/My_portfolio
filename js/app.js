@@ -40,7 +40,7 @@ project.addEventListener('click',function(){
 });
 // typewriter
 var i = 0;
-      var txt = 'I m a Web Designer / Python Developer';
+      var txt = "I' m a Web Designer / Python Developer";
       var speed = 100;
       
       function typeWriter() {
