@@ -5,12 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
-        <link rel="icon" type="image/x-icon" href="/image/my-logo.png">
+        <link rel="icon" type="image/x-icon" href="image/my-logo.png">
         <script src="https://kit.fontawesome.com/c4f2cac62a.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400;1,700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body onload="typeWriter()">
    <!-- hamberger -->
@@ -48,7 +49,7 @@
             </div>
  <!--I,m a webdeveloper  -->
              <div id="home" class="hero flex items-center justify-between">    
-                 <div class="left flex-1 justify-center hide">
+                 <div class="left flex-1 justify-center hide" data-aos="fade-in">
                      <img src="image/picsart.png">
                  </div>
             <div class="right flex-1 web">
@@ -219,7 +220,15 @@
               </div>
           </footer>
         </div>
-       
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+
+    AOS.init();
+         offset: 300,
+
+         duration: 1000,
+  </script>   
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
