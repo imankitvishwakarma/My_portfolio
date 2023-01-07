@@ -266,7 +266,7 @@ section.services .card-wrapper .card img{
 }
 
 section.services .card-wrapper .card:hover img{
-    transform: rotateY(180deg);
+    transform: rotateY(270deg);
     left: 30%;
 }
 
