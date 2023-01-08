@@ -6,9 +6,11 @@ body{
     -webkit-font-smothing:antialiased;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 html.body{
     width: 100%;
@@ -162,6 +164,7 @@ section .container{
 section.about .about-me-img{
     height: 350px;
     margin-left: 6rem;
+    box-shadow: 10px 10px 10px #ccb;
 }
 
 section.about h1{
